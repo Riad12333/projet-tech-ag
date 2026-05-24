@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="projet.auc">
+  <grid id="27dc6" binding="mainpannel" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="418"/>
+    </constraints>
+    <properties>
+      <background color="-15981745"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <scrollpane id="aa58f">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-15981745"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <grid id="85602" layout-manager="GridLayoutManager" row-count="8" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints/>
+            <properties>
+              <background color="-15981745"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <hspacer id="2d305">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <hspacer id="65603">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </hspacer>
+              <component id="98e1f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15981745"/>
+                  <foreground color="-1379585"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="8e76c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-15981745"/>
+                  <font name="Consolas" size="14" style="1"/>
+                  <foreground color="-1379585"/>
+                  <text value="nb buyer"/>
+                </properties>
+              </component>
+              <component id="aae9a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Consolas" size="14" style="1"/>
+                  <foreground color="-1379585"/>
+                  <text value="durée"/>
+                </properties>
+              </component>
+              <component id="d709e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Consolas" size="14" style="1"/>
+                  <foreground color="-1379585"/>
+                  <text value="starting price"/>
+                </properties>
+              </component>
+              <component id="8f2a5" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font name="Consolas" size="14" style="1"/>
+                  <foreground color="-1379585"/>
+                  <text value="reserve price"/>
+                </properties>
+              </component>
+              <component id="6226d" class="javax.swing.JTextField" binding="nb">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-13952392"/>
+                  <foreground color="-1379585"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="7244" class="javax.swing.JTextField" binding="durée">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-13952392"/>
+                  <foreground color="-1379585"/>
+                </properties>
+              </component>
+              <component id="652f" class="javax.swing.JTextField" binding="start">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-13952392"/>
+                  <foreground color="-1379585"/>
+                </properties>
+              </component>
+              <component id="54697" class="javax.swing.JTextField" binding="reserv">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <background color="-13952392"/>
+                  <foreground color="-1379585"/>
+                </properties>
+              </component>
+              <vspacer id="a3556">
+                <constraints>
+                  <grid row="1" column="2" row-span="7" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                </constraints>
+              </vspacer>
+              <component id="a0fad" class="javax.swing.JButton" binding="button1">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <background color="-13952392"/>
+                  <font name="Consolas" size="14" style="1"/>
+                  <foreground color="-1379585"/>
+                  <text value="start "/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </scrollpane>
+      <component id="a84e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-15981745"/>
+          <font name="Consolas" size="18" style="1"/>
+          <foreground color="-1379585"/>
+          <text value="  Multi-Agent Negociation "/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
