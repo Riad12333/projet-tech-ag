@@ -162,10 +162,10 @@ public class seller extends Agent {
 
     protected void setup() {
         comunication a = new comunication("seller");
-        a.setVisible(true);
+        // a.setVisible(true); // Log dynamically to the main dashboard instead of popping up windows
         Object[] args=getArguments();
         if(args!=null) {
-            this.dure = Integer.valueOf((String)(args[1])).intValue();;
+            this.dure = Integer.valueOf((String)(args[1])).intValue() * 1000;
             this.reserve_price=Integer.valueOf((String)(args[3])).intValue();
             this.first_price=Integer.valueOf((String)(args[2])).intValue();
             this.nb = Integer.valueOf((String)(args[0])).intValue();
@@ -241,7 +241,7 @@ public class seller extends Agent {
                             ACLMessage m2 = new ACLMessage(ACLMessage.INFORM);
                             Product l = new Product();
 
-                            if (P.price >= reserve_price ) {
+                            if (P != null && P.price >= reserve_price) {
                                 l.price = P.price;
                                 l.name = P.name;
                                 l.message = "winner";
@@ -250,10 +250,15 @@ public class seller extends Agent {
                                 m2.addReceiver(topic2);
                                 send(m2);
 
-                                a.sellertxt("winner "+l.name);
-
+                                a.sellertxt("winner " + l.name);
                             } else {
-                                l = P;
+                                if (P != null) {
+                                    l.price = P.price;
+                                    l.name = P.name;
+                                } else {
+                                    l.price = 0;
+                                    l.name = "None";
+                                }
                                 l.message = "no winner";
 
                                 a.sellertxt("no winner ");
@@ -262,24 +267,19 @@ public class seller extends Agent {
 
                                 m2.addReceiver(topic3);
                                 send(m2);
+                            }
 
-
-
-                        }
-
-                                ACLMessage m3 = new ACLMessage(ACLMessage.INFORM);
+                            ACLMessage m3 = new ACLMessage(ACLMessage.INFORM);
                             m3.setContentObject(l);
                             m3.setLanguage("JavaSerialization");
 
                             m3.addReceiver(topic4);
                             send(m3);
-                            if(dure <= GeneralInfo.getTimeSinceStart() ){
+                            if (dure <= GeneralInfo.getTimeSinceStart()) {
                                 a.sellertxt("end time of auction ");
-
                             }
 
                             a.sellertxt("end auction  ");
-
                             doDelete();
                         }
                     } catch (Exception e) {

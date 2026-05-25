@@ -23,7 +23,7 @@ public class buyers extends Agent {
 
 protected void setup() {
     comunication a = new comunication(getLocalName());
-    a.setVisible(true);
+    // a.setVisible(true); // Log dynamically to the main dashboard instead of popping up windows
     Object[] args=getArguments();
     if(args!=null) {
         this.prix_max = Integer.valueOf((String)(args[0])).intValue();
